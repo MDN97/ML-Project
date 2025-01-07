@@ -13,7 +13,7 @@ import seaborn as sns
 
 def load_data_and_train_models():
     # Load and preprocess data
-    data = pd.read_csv(r'C:\Users\Khaled\Desktop\Projet\taxi_trip_pricing.csv')
+    data = pd.read_csv('taxi_trip_pricing.csv')
     data.dropna(inplace=True)
 
     X = data.drop(columns='Trip_Price')
